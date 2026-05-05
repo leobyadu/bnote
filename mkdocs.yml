@@ -1,0 +1,119 @@
+site_name: Baold Notes
+# site_url: https://baold.id.vn
+
+nav: 
+  - Home: index.md
+  - 日本語: 
+    - Giới thiệu : japanese/index.md
+    - Bảng hiragana & katakana: japanese\beginer\bang-chu-cai-hiragana-katakana.md
+  - Angular: 
+      - Angular là gì ?: angular/index.md
+      - Bài 1: angular/001.md
+      
+  - AWS:
+    - AWS là gì ?: aws/aws-la-gi.md
+    - AWS Identity & Access Management (IAM): aws/aws-identity-access-management.md
+    - Network Basic: aws/network-basic.md
+  - AWS Exam:
+    - Exam 01: aws/exam-test/exam-01.md
+  - Blogs: 
+      - blog/index.md
+      - Tags: tags.md
+
+theme: 
+  name: material
+  language: vi
+  font:
+    text: Noto Sans JP
+    code: Roboto Mono
+  palette:
+# Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      # primary: blue grey
+      # accent: deep orange
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      # primary: blue grey
+      # accent: deep orange
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+    - navigation.sections     # sidebar mở rộng ra hết không ẩn sub-items
+    - navigation.expand
+    - navigation.indexes 
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+  - pymdownx.snippets
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+extra:
+  generator: false
+  
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com
+    - icon: fontawesome/brands/docker 
+      link: https://docker.com
+    - icon: fontawesome/brands/x-twitter 
+      link: https://x.com
+      
+copyright: Copyright &copy; 2025 - 2026 Baold
+
+plugins:
+  - search
+  - meta
+  - tags: 
+      tags_file: tags.md
+  - blog:
+      categories_allowed:
+        - 日本語
+        - TechSkills
+        - Typescripts
+        - Angular
+        - Objectscripts
+        - Nodejs
+        - Nextjs
+        - Reactjs
+        - AWS-Cloud
+        - Autocad
+        - Life-Style
